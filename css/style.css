@@ -1,0 +1,197 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --primary-clr: red;
+  --font-family-p1: "Plus Jakarta Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Media & Images */
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Forms */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  transition: all 0.6s ease-in-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/*  */
+.SiteHeader {
+  background-color: #27272a;
+  padding: 10px;
+  position: static;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.SiteHeader .navbar-nav {
+  gap: 30px;
+}
+
+.SiteHeader .navbar-nav li {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.SiteHeader .navbar-nav li a {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: var(--white);
+  text-transform: capitalize;
+  font: 500 16px/1.2 var(--font-family-p1);
+}
+
+.SiteHeader .navbar-nav li a.active {
+  color: var(--white);
+}
+
+.SiteHeader .navbar-brand {
+  color: var(--white);
+  font: 600 20px/1.2 var(--font-family-p1);
+  text-transform: uppercase;
+}
+
+/*  */
+.PerformanceDt {
+  background: linear-gradient(to bottom, black, rgba(24, 24, 27, 0.8), black);
+  padding: 10px 0;
+}
+
+.PerformanceBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+
+}
+
+.PerformanceBarItem {
+  font: 400 14px/1.2 var(--font-family-p1);
+  text-transform: capitalize;
+  color: var(--white);
+}
+
+.PerformanceBarItem span {
+  color: var(--primary-clr);
+  margin-right: 5px;
+}
+
+.PerformanceBarItem i {
+  color: var(--primary-clr);
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+/*  */
+.SiteFooter {
+  background-color: #27272a;
+  padding: 10px;
+  border-top: 1px solid #ffffff1a;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-content p {
+  text-align: center;
+  color: #a1a1aa;
+  font: 500 14px/1.2 var(--font-family-p1);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-links a {
+  color: #a1a1aa;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.social-links a.discord:hover {
+  color: #5865F2;
+  transform: scale(1.1);
+}
+
+.social-links a.youtube:hover {
+  color: #ff0000;
+  transform: scale(1.1);
+}
+
+.social-links a.twitter:hover {
+  color: #1DA1F2;
+  transform: scale(1.1);
+}
